@@ -1,0 +1,27 @@
+@import "./reset.css";
+
+@font-face {
+    font-family: IRANSans;
+    src: url(./fonts/IRANSans.ttf);
+}
+
+:root {
+    --white: #ffffff;
+    --white-50: #dfe0e5;
+    --blue: #430a52;
+}
+
+body {
+    background-color: var(--white-50);
+    display: flex;
+    direction: rtl;
+}
+
+*, body, html {
+    font-family: IRANSans;
+}
+button{
+    border: none;
+    outline: none;
+    border-radius: 5px !important;
+}
