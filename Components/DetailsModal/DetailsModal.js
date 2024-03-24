@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./DetailsModal.css";
 
-export default function DetailsModal({children, onHide, popularity, sale, colors }) {
+export default function DetailsModal({children, onHide}) {
   useEffect(() => {
     const keyDown = event => {
       console.log(event);

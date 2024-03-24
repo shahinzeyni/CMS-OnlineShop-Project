@@ -46,7 +46,7 @@ export default function ProductsTable({getAllProducts ,allProducts}) {
         console.log('Submit Clicked!')
     }
 
-    
+
     const closeDetialModal = () => {
         setIsShowDetailModal(false)
     }
@@ -72,8 +72,6 @@ export default function ProductsTable({getAllProducts ,allProducts}) {
         body: JSON.stringify(NewUpdateProduct)
       }).then((res) => res.json())
       .then(result => {
-        console.log(result)
-        console.log('object');
         getAllProducts()
         setIsShowEditModal(false)
       })
@@ -152,6 +150,7 @@ export default function ProductsTable({getAllProducts ,allProducts}) {
       )}
       {isShowModal && (
         <DeleteModal
+          title="آیا از حذف اطمینان دارید؟"
           cancelAction={deleteModalCancelAction}
           submitAction={deleteModalSubmitAction}
         />

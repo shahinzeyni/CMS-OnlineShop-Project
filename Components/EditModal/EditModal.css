@@ -11,9 +11,14 @@
 
 .edit-form-submit {
     margin-top: 20px;
-    width: 100%;
+    /* width: 100%; */
     padding: 8px 10px;
     background-color: var(--blue);
     color: var(--white);
     font-size: 1.1rem;
+    margin-top: 30px;
+}
+.edit-form-submit-parent{
+    display: flex;
+    justify-content: space-evenly;
 }

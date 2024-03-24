@@ -23,7 +23,10 @@ export default function EditModal({ children, onClose, onSubmit }) {
 
         {children}
 
-        <button className="edit-form-submit" onClick={onSubmit}>ثبت اطلاعات جدید</button>
+       <div className="edit-form-submit-parent">
+       <button className="edit-form-submit" onClick={onSubmit}>ثبت اطلاعات جدید</button>
+        <button  className="edit-form-submit" onClick={onClose} >لغو</button>
+       </div>
       </form>
     </div>
   );
